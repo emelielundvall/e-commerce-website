@@ -1,10 +1,20 @@
+/* margin */
+body {
+    margin: 2rem;
+}
+
+/* logo size */
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    height: 1.5rem;
 }
-.center-img {
-    max-width: 100%;
-    height: auto;
+
+.categories ul {
+    list-style: none;
+    padding-left: 0;
+} /* ignoring the dots */
+
+/* change color of links */
+.categories li {
+    color: #080808;
 }
+
