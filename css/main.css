@@ -1,38 +1,65 @@
-header {
-    position: relative;
+html, body {
+    height: 100%;
 }
 
-/* margin */
 body {
     margin: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
-/* logo size */
+main {
+    flex: 1;
+}
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 10px 0;
+    background-color:rgb(241, 240, 240)
+}
 
 nav {
     text-align: center;
     margin-bottom: -30px;
 }
-.rectangle {
+.header-bar {
     width: 100%;
     height: 100px;
     background-color:rgb(251, 201, 226);
-    margin: 0 auto; /* center the rectangle */
-}
-.logo {
-    height: 15rem;
-    width: auto;
-    position: absolute;
-    top: -60px;
-    left: -5%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
 
+.logo {
+    height: 13rem;
+    width: auto;   
+
+}
+.icons {
+    display: flex;
+    gap: 20px;
+    padding-right: 50px;
+}
+.icons img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+
+
+/* ignoring the dots */
 .categories {
     list-style: none;
     padding-left: 0;
-} /* ignoring the dots */
-
+} 
 /* change color of links */
 .categories li {
     color: #090909;
@@ -44,6 +71,7 @@ ul {
     justify-content: space-around;
 }
 
+/* font */
 .nisch {
     text-align: center;
     font-family: "Dawning of a New Day", cursive;
