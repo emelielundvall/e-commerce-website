@@ -1,3 +1,7 @@
+header {
+    position: relative;
+}
+
 /* margin */
 body {
     margin: 2rem;
@@ -10,20 +14,20 @@ nav {
     text-align: center;
     margin-bottom: -30px;
 }
+.rectangle {
+    width: 100%;
+    height: 100px;
+    background-color:rgb(251, 201, 226);
+    margin: 0 auto; /* center the rectangle */
+}
 .logo {
     height: 15rem;
     width: auto;
-}
-.rectangle {
-    width: 100%;
-    height: 150px;
-    background-color:rgb(251, 168, 210);
-    margin: 0 auto; /* center the rectangle */
+    position: absolute;
+    top: -60px;
+    left: -5%;
 }
 
-header nav {
-    display: flex;
-}
 .categories {
     list-style: none;
     padding-left: 0;
@@ -31,7 +35,7 @@ header nav {
 
 /* change color of links */
 .categories li {
-    color: #080808;
+    color: #090909;
 }
 
 ul {
@@ -39,3 +43,12 @@ ul {
     flex-flow: row;
     justify-content: space-around;
 }
+
+.nisch {
+    text-align: center;
+    font-family: "Dawning of a New Day", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: hotpink;
+}
+
