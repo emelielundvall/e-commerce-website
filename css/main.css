@@ -65,6 +65,21 @@ nav {
     color: #090909;
 }
 
+/* youtube */
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.starting-img::after {
+    content: "";
+    display: table;
+}
+
+
 ul {
     display: flex;
     flex-flow: row;
