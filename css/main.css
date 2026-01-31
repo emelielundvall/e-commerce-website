@@ -2,14 +2,12 @@ html, body {
     height: 100%;
     background-color: rgb(252, 250, 251);
 }
-
 body {
     margin: 0;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
-
 main {
     flex: 1;
 }
@@ -22,6 +20,7 @@ main {
     align-items: center;
     justify-content: space-between;
     background-color: rgb(254, 195, 220);;
+    margin-top: 10px;
 
 }
 .logo {
@@ -71,7 +70,7 @@ ul {
 }
 .content {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr auto; /* AI */
     align-items: stretch;
     gap: 1rem;
     max-width: 900px;
