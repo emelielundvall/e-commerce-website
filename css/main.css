@@ -3,7 +3,7 @@ html, body {
     background-color: rgb(252, 250, 251);
 }
 body {
-    margin: 0;
+    margin: 0rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,30 +19,24 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(254, 195, 220);;
+    background-color: rgb(254, 195, 220);
     margin-top: 10px;
-
 }
 .logo {
     height: 10rem;
     width: auto;
     margin-top: 10px;
     padding-left: -100px;   
-
 }
 .icons {
     display: flex;
     gap: 20px;
-    padding-right: 50px;
-}
-.icons img {
+    padding-right: 150px;
     width: 40px;
     height: 40px;
     cursor: pointer;
 }
 
-
-/* ignoring the dots */
 .categories {
     list-style: none;
     padding-left: 0;
@@ -55,12 +49,12 @@ main {
 .categories li {
     color: #fdfdfd;
 }
-
 ul {
     display: flex;
     flex-flow: row;
     justify-content: space-around;
 }
+
 
 /* Handcrafted text & image */
 .info {
@@ -98,13 +92,25 @@ ul {
     color: #555;
 }
 
-/* bottom */
-footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+h3 {
+    padding-left: 3rem;
+}
+.new-launches {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    width: 97%;
+}
+.new-launches img {
     width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
     padding: 10px 0;
     background-color:rgb(241, 240, 240)
 }
