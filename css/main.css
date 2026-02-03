@@ -75,6 +75,7 @@ ul {
     height: 200px;
     width: auto;
     object-fit: cover;
+    padding-top: 1rem;
     border-radius: 5px;
 }
 .text {
@@ -98,6 +99,7 @@ h3 {
 .new-launches {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 1fr;
     gap: 5px;
     width: 97%;
 }
