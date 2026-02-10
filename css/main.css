@@ -151,19 +151,19 @@ footer {
 
 
 /* cart */
-h1 {
+.cart {
     font-size: 25px;
     padding-left: 2rem;
 }
-h2 {
+.cart-text {
     font-size: 20px;
     padding-left: 1rem;
 }
-h3 {
+.start-shopping { 
     font-size: 20px;
-    padding-left: 1rem;
+    margin: 1rem;
     background-color:rgb(251, 203, 223);
-    
+    padding: 2px 8px;
 }
 
 /* products */
