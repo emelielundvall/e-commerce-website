@@ -151,7 +151,23 @@ footer {
 
 
 /* cart */
+h1 {
+    font-size: 25px;
+    padding-left: 2rem;
+}
+h2 {
+    font-size: 20px;
+    padding-left: 1rem;
+}
+h3 {
+    font-size: 20px;
+    padding-left: 1rem;
+    background-color:rgb(251, 203, 223);
+    
+}
 
 /* products */
 
+
 /* product */ 
+
