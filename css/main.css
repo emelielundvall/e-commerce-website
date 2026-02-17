@@ -165,15 +165,31 @@ footer {
 }
 .cart-text {
     font-size: 20px;
-    padding-left: 1rem;
+    padding-left: 2rem;
     font-family:Georgia, 'Times New Roman', Times, serif
 }
 
 .cart-items {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
     
 }
+.item1 img {
+    width: 150px;
+    height: 100%;
+    margin-left: 2rem;
+}
+.item1-text {
+    margin-top: -6rem;
+}
+.fixed-line {
+    max-width: 600px;
+    margin-left: 2rem;
+
+}
+
 
 
 /* products */
