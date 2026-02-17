@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=WindSong&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
-    <script src="js/script.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
      <nav>
@@ -32,11 +32,11 @@
         <nav class="menu-bar">
         <ul class="categories">
             <li><a href="#">Bestsellers</a></li>
-            <li><a href="products.html">Jewelry</a></li>
+            <li><a href="products.html">Necklaces</a></li>
+            <li><a href="#">Bracelets</a></li>
+            <li><a href="#">Earrings</a></li>
+            <li><a href="#">Rings</a></li>
             <li><a href="#">Watches</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Gift Guide</a></li>
-            <li><a href="#">Sale</a></li>
          </ul>
         </nav>
     </header>
@@ -44,10 +44,8 @@
     
     <main>
         <p class="cart">Your Cart</p>
-        <p class="cart-text">Your cart is empty</p>
 
         <hr class="fixed-line">
-
         <div class="cart-items">
             <div class="item1">
                 <img src="./images/products/heart-necklace.jpeg">
@@ -56,9 +54,22 @@
             <h4>Heart Necklace</h4>
             <p>99 €</p>
             </div>
-        </div>
+            <div class="proceed-to-payment">
+             <p class="summary">Total incl. VAT</p>
+             <p class="payment">Proceed to payment</p>
+            </div>
 
+            <div class="quantity-selector">
+                <button class="decrease">-</button>
+                <input type="text" class="quantity" value="1" readonly>
+                <button class="increase">+</button>
+            </div>
+                
+    
+
+        </div>
         <hr class="fixed-line">
+       
 
 
     </main>
