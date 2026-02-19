@@ -49,7 +49,46 @@ quantitySelectors.forEach(selector => {
 updateTotal();
 
 
+// removing items in cart //
+const removeButtons = document.querySelectorAll('.remove-btn');
+
+removeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const cartItem = btn.closest('.cart-items');
+
+        if (cartItem) {
+            cartItem.remove(); //removes product from DOM//
+            updateTotal();
+        }
+    })
+})
     
 
+// adding item to cart //
+
+const shopButtons = document.querySelectorAll('.shop');
+
+shopButtons.forEach(button => {
+    button.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const title = button.dataet.title;
+        const price = parseFloat(button.dataset.price);
+        const image = button.dataset.image;
+
+        let cart = JSON.parsel(localStorage.getItem('cart')) || [];
+
+        const existingItem = cart.find(item => item.title === title);
+        if (existingItem) {
+            existingItem.quantity += 1; 
+        } else {
+            cart.push({title, price, image, quantity: 1});
+        }
+
+        localStorage.setItem('cart', JSON.stringify(cart));
+
+        window.location.href = 'cart.html';
+    });
+});
     
     
