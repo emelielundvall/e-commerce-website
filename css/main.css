@@ -35,13 +35,39 @@ header {
     display: flex;
     gap: 20px;
     padding-right: 70px;
+    padding-top: 10px;
+
 
 }
 .icons img {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
     cursor: pointer;
 }
+/* cart-icon */
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+    width: 40px; 
+    height: 40px; 
+}
+
+.cart-count {
+    position: absolute;
+    top: 25px;   
+    right: -5px; 
+    background-color: rgb(120, 23, 46);
+    color: rgb(249, 202, 222);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    display: inline-block; 
+    text-align: center;
+    line-height: 1;
+}
+
 .categories {
     list-style: none;
     padding-left: 0;
@@ -174,24 +200,23 @@ h3 {
     object-fit: cover;
     width: 150px;
     height: 200px;
-    margin-left: 1rem;
+    margin-left: 4rem;
     border-radius: 3px;
+    margin-top: 1rem;
 }
 /* text and price */
 .item1-text {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    margin-left: 2rem;
+    gap: 5px;
+    margin-left: 5rem;
 }
 
 /* quantity + trashcan under the price */
 .quantity-remove {
     display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 9rem;
-    margin-right: 2rem;
+    gap: 30px;
+    margin-top: 10rem;
 }
 /* + - buttons */
 .quantity-selector {
@@ -224,17 +249,17 @@ h3 {
 .proceed-to-payment {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     justify-content: center;
-    padding: 1rem;
-    margin-right: 1rem;
-    text-align: center;
+    padding: 3rem;
+    text-align: left;
     background-color: rgb(241, 240, 240)
+    
     
 }
 .payment {
-    color: white;
-    background-color: black;
+    color: black;
+    background-color: rgb(249, 202, 222);
     width: 160px;
     padding: 0.5rem 0;
     text-align: center;
@@ -284,6 +309,9 @@ a {
 
 /* product */ 
 
+
+
+/* footer */
 footer {
     width: 100%;
     text-align: center;
