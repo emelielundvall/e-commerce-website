@@ -107,7 +107,7 @@ header {
     }
     .categories li a {
         color: rgb(120, 23, 46);
-        font-size: 1px;
+        font-size: 17px;
         text-decoration: none;
     }
 }
