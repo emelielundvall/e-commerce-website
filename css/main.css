@@ -121,7 +121,7 @@ header {
 }
 .cart-count {
     position: absolute;
-    top: 20px;   
+    top: 25px;   
     right: -5px; 
     background-color: rgb(120, 23, 46);
     color: rgb(249, 202, 222);
