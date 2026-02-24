@@ -288,7 +288,7 @@ h1 {
     width: 100%;
 }
 
-.product1, .product2, .product3, .product4, .product5, .product6, .product7, .product8 {
+.product-side > div {
     text-align: center;
     color: black;
     margin: 1rem;
@@ -304,6 +304,23 @@ a {
     object-fit: cover;
 }
 
+@media (max-width: 770px) {
+    h1 {
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 16px;
+        text-align: center;
+        margin-left: 0;
+    }
+    .product-side {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 /* product */ 
