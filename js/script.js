@@ -1,5 +1,10 @@
-// ADD TO CART - products.html //
+// HAMBURGER MENU //
+function toggleMenu() {
+    document.getElementById('navLinks').classList.toggle('active');
+}
 
+
+// ADD TO CART - products.html //
 const shopButtons = document.querySelectorAll('.shop');
 
 shopButtons.forEach(button => {
@@ -154,3 +159,5 @@ if (addToCartBtn) {
          updateCartCount();
     });
 }
+
+

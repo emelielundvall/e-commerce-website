@@ -17,28 +17,38 @@
 <body>
 
     <header>
-        <div class="top-bar">
-             <a href="index.html" class="logo">Linnéa</a>
-            <div class="icons">
-             <img src="./images/search.png" alt="search">
-             <img src="./images/profile.png" alt="profile">
-             <a href="cart.html" class="cart-icon">
-                <img src="./images/shopping-bag.png" alt="shopping-bag">
-                <span class="cart-count" style="display:none;"></span>
-            </a>
+        <nav class="top-bar">
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-        </div>
 
-        <nav class="menu-bar">
-        <ul class="categories">
-            <li><a href="#">Bestsellers</a></li>
-            <li><a href="products.html">Necklaces</a></li>
-            <li><a href="#">Bracelets</a></li>
-            <li><a href="#">Earrings</a></li>
-            <li><a href="#">Rings</a></li>
-            <li><a href="#">Watches</a></li>
-         </ul>
+            <div class="logo">
+                <a href="index.html" class="logo">Linnéa</a>
+            </div>
+
+            <div class="top-bar-icons">
+                 <img src="./images/search.png" alt="search">
+                 <img src="./images/profile.png" alt="profile">
+                 <a href="cart.html" class="cart-icon">
+                     <img src="./images/shopping-bag.png" alt="shopping-bag">
+                     <span class="cart-count" style="display:none;">0</span>
+             </a>
+            </div>
         </nav>
+
+
+        <nav class="main-nav" id="navLinks">
+             <ul class="categories">
+                 <li><a href="#">Bestsellers</a></li>
+                 <li><a href="products.html">Necklaces</a></li>
+                 <li><a href="#">Bracelets</a></li>
+                 <li><a href="#">Earrings</a></li>
+                 <li><a href="#">Rings</a></li>
+                 <li><a href="#">Watches</a></li>
+             </ul>
+       </nav>
     </header>
   
     <main>
