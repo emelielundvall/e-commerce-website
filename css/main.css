@@ -193,6 +193,7 @@ hr {
 
 h3 {
     padding-left: 3rem;
+    padding-top: 1rem;
     font-family: "WindSong", cursive;
         font-weight: 400;
         font-size: 20px;
@@ -424,7 +425,8 @@ a {
     transition: border 0.3s;
 }
 .photos img:hover {
-    border-color:rgb(120, 23, 46)
+    transform: scale(1.05);
+    border-color:rgb(120, 23, 46);
 }
 
 .product-info {

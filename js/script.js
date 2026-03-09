@@ -161,3 +161,9 @@ if (addToCartBtn) {
 }
 
 
+// product side //
+
+function changeImage(image) {
+    const mainImage = document.getElementById("mainImage");
+    mainImage.src = image.src;
+}

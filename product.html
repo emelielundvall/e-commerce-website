@@ -59,12 +59,14 @@
         <div class="product-container">
             <div class="product-photos">
                  <div class="main-photo">
-                      <img src="./images/products/heart-necklace-blond-woman.jpeg" alt="blond-woman">
+                      <img id="mainImage" src="./images/products/heart-necklace-blond-woman.jpeg" alt="blond-woman">
                  </div>
+
                  <div class="photos">
-                     <img src="./images/products/heart-product-photo.jpeg" alt="product-photo">
-                     <img src="./images/products/heart-necklace.jpeg" alt="Heart Necklace">
-                     <img src="./images/products/heart-necklace-blond-woman2.jpeg" alt="blond-woman2">
+                     <img src="./images/products/heart-necklace-blond-woman.jpeg" onclick="changeImage(this)">
+                     <img src="./images/products/heart-product-photo.jpeg" onclick="changeImage(this)">
+                     <img src="./images/products/heart-necklace.jpeg" onclick="changeImage(this)">
+                     <img src="./images/products/heart-necklace-blond-woman2.jpeg" onclick="changeImage(this)">
                  </div>
             </div>
         
@@ -81,7 +83,7 @@
                  </details>
                  <details>
                     <summary>Delivery & return</summary>
-                    <p>Vi erbjuder alltid flera leveransalternativ. Observera att vårt standard leveranssätt inte är spårbart.</p>
+                    <p>We always offer multiple delivery options. Please note that our standard delivery method is not trackable.</p>
                 </details>
        
             </div>
