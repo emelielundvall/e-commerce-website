@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,74 +13,75 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="./js/script.js" defer></script>
 </head>
+
 <body>
-     <nav>
-        <a href="index.html"></a>
-        <a href="products.html"></a>
-        <a href="cart.html"></a>
-     </nav>
+
+<header>
+
+<nav class="top-bar">
+    <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
     
-    <header>
-       <nav class="top-bar">
-            <div class="hamburger" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+    <a href="index.html" class="logo">Linnéa</a>
 
-            <div class="logo">
-                <a href="index.html" class="logo">Linnéa</a>
-            </div>
+    <div class="top-bar-icons">
+        <img src="./images/search.png" alt="search">
+        <img src="./images/profile.png" alt="profile">
+            
+        <a href="cart.html" class="cart-icon">
+        <img src="./images/shopping-bag.png" alt="shopping-bag">
+        <span class="cart-count" style="display:none;">0</span>
+        </a>
+    </div>
+</nav>
+       
+<nav class="main-nav" id="navLinks">
+    <ul class="categories">
+        <li><a href="#">Bestsellers</a></li>
+        <li><a href="products.html">Necklaces</a></li>
+        <li><a href="#">Bracelets</a></li>
+        <li><a href="#">Earrings</a></li>
+        <li><a href="#">Rings</a></li>
+        <li><a href="#">Watches</a></li>
+    </ul>
+</nav>
 
-            <div class="top-bar-icons">
-                 <img src="./images/search.png" alt="search">
-                 <img src="./images/profile.png" alt="profile">
-                 <a href="cart.html" class="cart-icon">
-                     <img src="./images/shopping-bag.png" alt="shopping-bag">
-                     <span class="cart-count" style="display:none;">0</span>
-             </a>
-            </div>
-        </nav>
-
-
-        <nav class="main-nav" id="navLinks">
-             <ul class="categories">
-                 <li><a href="#">Bestsellers</a></li>
-                 <li><a href="products.html">Necklaces</a></li>
-                 <li><a href="#">Bracelets</a></li>
-                 <li><a href="#">Earrings</a></li>
-                 <li><a href="#">Rings</a></li>
-                 <li><a href="#">Watches</a></li>
-             </ul>
-       </nav>
-    </header>
+</header>
     
-    <main>
-        <h1>Necklaces</h1>
-        <div class="product-side">
+<main>
+    <h1>Necklaces</h1>
+    <div class="product-side">
 
-            <div class="product1">
-                <a href="product.html" >
-                    <img
-                      src="./images/products/heart-necklace.jpeg" alt="heart-necklace" width="220"
-                      onmouseover="this.src='./images/products/heart-necklace-woman.jpeg'"
-                      onmouseout="this.src='./images/products/heart-necklace.jpeg'">
-                    <p class="title">Heart Necklace</p>
-                    <p class="price">99 €</p>
-                </a>
-                <a href="#" class="shop"
-                 data-title="Heart Necklace"
-                 data-price="99"
-                 data-image="./images/products/heart-necklace.jpeg">
-                 Shop Now
-                </a>
+    <!-- PRODUCTS -->
+    <div>
+        <a href="product.html">
+
+        <img
+        src="./images/products/heart-necklace.jpeg"
+        alt="heart-necklace" width="220"
+        onmouseover="this.src='./images/products/heart-necklace-woman.jpeg'"
+        onmouseout="this.src='./images/products/heart-necklace.jpeg'">
         
-            </div>
+        <p class="title">Heart Necklace</p>
+        <p class="price">99 €</p>
+        </a>
 
-            <div class="product2">
-                <a href="products.html">
+        <a href="#" class="shop"
+            data-title="Heart Necklace"
+            data-price="99"
+            data-image="./images/products/heart-necklace.jpeg">
+            Shop Now
+        </a>
+        
+    </div>
+
+    <div>
+                <a href="product.html">
                     <img
-                    src="./images/products/pearl-necklace.jpeg" alt="pearl-necklace" width="220"
+                    src="./images/products/pearl-necklace.jpeg" alt="pearl-necklace" 
                       onmouseover="this.src='./images/products/pearl-necklace-woman.jpeg'"
                       onmouseout="this.src='./images/products/pearl-necklace.jpeg'">
                     <p class="title">Pearl Necklace</p>
@@ -91,122 +93,115 @@
                  data-image="./images/products/pearl-necklace.jpeg">
                  Shop Now
                 </a>
+    </div>
+
+    <div>
+        <a href="product.html">
+            <img
+            src="./images/products/eye-necklace.jpeg" alt="eye-necklace" 
+                onmouseover="this.src='./images/products/eye-necklace-woman.jpeg'"
+                onmouseout="this.src='./images/products/eye-necklace.jpeg'">
+            <p class="title">Watchful Eye Necklace</p>
+            <p class="price">99 €</p>
+        </a>
+        <a href="#" class="shop"
+            data-title="Watchful Eye Necklace"
+            data-price="99"
+            data-image="./images/products/eye-necklace.jpeg">
+            Shop Now
+        </a>
+    </div>
+
+    <div>
+        <a href="product.html">
+        <img 
+        src="./images/products/forever-love-necklace.jpeg" alt="forever-love-necklace"
+            onmouseover="this.src='./images/products/forever-love-necklace-woman.jpeg'"
+            onmouseout="this.src='./images/products/forever-love-necklace.jpeg'">
+        <p class="title">Forever Love Necklace</p>
+        <p class="price">99 €</p>
+        </a>
+        <a href="#" class="shop"
+            data-title="Forever Love Necklace"
+            data-price="99"
+            data-image="./images/products/forever-love-necklace.jpeg">
+            Shop Now
+        </a>
+    </div>
+
+    <div>
+        <a href="product.html">
+        <img
+        src="./images/products/bf.jpeg" alt="bf-necklace" 
+            onmouseover="this.src='./images/products/close-bf.jpeg'"
+            onmouseout="this.src='./images/products/bf.jpeg'">
+                <p class="title">Best Friend Necklace</p>
+                <p class="price">99 €</p>
+        </a>
+        <a href="#" class="shop"
+            data-title="Best Friend Necklace"
+            data-price="99"
+            data-image="./images/products/bf-necklace.jpeg">
+            Shop Now
+        </a>
+    </div>
+
+    <div>
+        <a href="product.html">
+        <img
+            src="./images/products/chain-necklace.jpeg" alt="chain-necklace" 
+            onmouseover="this.src='./images/products/chain-necklace-woman.jpeg'"
+            onmouseout="this.src='./images/products/chain-necklace.jpeg'">
+                <p class="title">Chain Necklace</p>
+                <p class="price">99 €</p>
+        </a>
+        <a href="#" class="shop"
+            data-title="Chain Necklace"
+            data-price="99"
+            data-image="./images/products/chain-necklace.jpeg">
+            Shop Now
+        </a>
+    </div>
+
+    <div>
+        <a href="product.html">
+        <img
+        src="./images/products/love-charm-necklace.jpeg" alt="love-charm-necklace"
+            onmouseover="this.src='./images/products/love-charm-necklace-woman.jpeg'"
+            onmouseout="this.src='./images/products/love-charm-necklace.jpeg'">
+                <p class="title">Love Charm Necklace</p>
+                <p class="price">99 €</p>
+        </a>
+        <a href="#" class="shop"
+            data-title="Love Charm Necklace"
+            data-price="99"
+            data-image="./images/products/love-charm-necklace.jpeg">
+            Shop Now
+        </a>
+    </div>
             
-            </div>
+    <div>
+        <a href="product.html">
+        <img
+        src="./images/products/diamond-necklace.jpeg" alt="diamond-necklace"
+            onmouseover="this.src='./images/products/diamond-necklace-woman.jpeg'"
+            onmouseout="this.src='./images/products/diamond-necklace.jpeg'">
+                <p class="title">Diamond Necklace</p>
+                <p class="price">99 €</p>
+        </a>
+        <a href="#" class="shop"
+            data-title="Diamond Necklace"
+            data-price="99"
+            data-image="./images/products/diamond-necklace.jpeg">
+            Shop Now
+        </a>
+    </div>
+</div>
+</main>
 
-            <div class="product3">
-                <a href="products.html">
-                    <img
-                    src="./images/products/eye-necklace.jpeg" alt="eye-necklace" width="220"
-                      onmouseover="this.src='./images/products/eye-necklace-woman.jpeg'"
-                      onmouseout="this.src='./images/products/eye-necklace.jpeg'">
-                    <p class="title">Watchful Eye Necklace</p>
-                    <p class="price">99 €</p>
-                </a>
-                <a href="#" class="shop"
-                 data-title="Watchful Eye Necklace"
-                 data-price="99"
-                 data-image="./images/products/eye-necklace.jpeg">
-                 Shop Now
-                </a>
-            
-            </div>
-
-            <div class="product4">
-                <a href="products.html">
-                    <img 
-                    src="./images/products/forever-love-necklace.jpeg" alt="forever-love-necklace" width="220"
-                      onmouseover="this.src='./images/products/forever-love-necklace-woman.jpeg'"
-                      onmouseout="this.src='./images/products/forever-love-necklace.jpeg'">
-                    <p class="title">Forever Love Necklace</p>
-                    <p class="price">99 €</p>
-                </a>
-                <a href="#" class="shop"
-                 data-title="Forever Love Necklace"
-                 data-price="99"
-                 data-image="./images/products/forever-love-necklace.jpeg">
-                 Shop Now
-                </a>
-            
-            </div>
-
-             <div class="product5">
-                <a href="products.html">
-                    <img
-                    src="./images/products/bf.jpeg" alt="bf-necklace" width="220"
-                      onmouseover="this.src='./images/products/close-bf.jpeg'"
-                      onmouseout="this.src='./images/products/bf.jpeg'">
-                    <p class="title">Best Friend Necklace</p>
-                    <p class="price">99 €</p>
-                </a>
-                <a href="#" class="shop"
-                 data-title="Best Friend Necklace"
-                 data-price="99"
-                 data-image="./images/products/bf-necklace.jpeg">
-                 Shop Now
-                </a>
-            
-            </div>
-
-             <div class="product6">
-                <a href="products.html">
-                    <img
-                    src="./images/products/chain-necklace.jpeg" alt="chain-necklace" width="220"
-                      onmouseover="this.src='./images/products/chain-necklace-woman.jpeg'"
-                      onmouseout="this.src='./images/products/chain-necklace.jpeg'">
-                    <p class="title">Chain Necklace</p>
-                    <p class="price">99 €</p>
-                </a>
-                <a href="#" class="shop"
-                 data-title="Chain Necklace"
-                 data-price="99"
-                 data-image="./images/products/chain-necklace.jpeg">
-                 Shop Now
-                </a>
-            </div>
-
-             <div class="product7">
-                <a href="products.html">
-                    <img
-                    src="./images/products/love-charm-necklace.jpeg" alt="love-charm-necklace" width="220"
-                      onmouseover="this.src='./images/products/love-charm-necklace-woman.jpeg'"
-                      onmouseout="this.src='./images/products/love-charm-necklace.jpeg'">
-                    <p class="title">Love Charm Necklace</p>
-                    <p class="price">99 €</p>
-                </a>
-                <a href="#" class="shop"
-                 data-title="Love Charm Necklace"
-                 data-price="99"
-                 data-image="./images/products/love-charm-necklace.jpeg">
-                 Shop Now
-                </a>
-            
-            </div>
-            
-             <div class="product8">
-                <a href="products.html">
-                    <img
-                    src="./images/products/diamond-necklace.jpeg" alt="diamond-necklace" width="220"
-                      onmouseover="this.src='./images/products/diamond-necklace-woman.jpeg'"
-                      onmouseout="this.src='./images/products/diamond-necklace.jpeg'">
-                    <p class="title">Diamond Necklace</p>
-                    <p class="price">99 €</p>
-                </a>
-                <a href="#" class="shop"
-                 data-title="Diamond Necklace"
-                 data-price="99"
-                 data-image="./images/products/diamond-necklace.jpeg">
-                 Shop Now
-                </a>
-            </div>
-
-        </div>
-    
-    </main>
-
-    <footer>
-        <p>&copy; 2026 Linnéa</p>
-    </footer>
+<footer>
+    <p>&copy; 2026 Linnéa</p>
+</footer>
 
 </body>
 </html>

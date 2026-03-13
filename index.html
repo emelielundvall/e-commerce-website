@@ -17,6 +17,7 @@
 <body>
 
     <header>
+        <!-- TOP BAR -->
          <nav class="top-bar">
             <div class="hamburger" onclick="toggleMenu()">
                 <span></span>
@@ -24,20 +25,20 @@
                 <span></span>
             </div>
 
-            <div class="logo">
-                <a href="index.html" class="logo">Linnéa</a>
-            </div>
+            <a href="index.html" class="logo">Linnéa</a>
 
             <div class="top-bar-icons">
                  <img src="./images/search.png" alt="search">
                  <img src="./images/profile.png" alt="profile">
+                 
                  <a href="cart.html" class="cart-icon">
                      <img src="./images/shopping-bag.png" alt="shopping-bag">
                      <span class="cart-count" style="display:none;">0</span>
-             </a>
+                 </a>
             </div>
         </nav>
-
+        
+        <!-- MENU -->
         <nav class="main-nav" id="navLinks">
              <ul class="categories">
                  <li><a href="#">Bestsellers</a></li>
@@ -51,21 +52,26 @@
     </header>
   
     <main>
+        <!-- FIRST IMAGE ON START PAGE -->
         <div class="start-page-image">
            <img src="./images/dua-lipa.png" alt="Start page"> 
         </div>
         
         <h3>New Launches</h3>
+
+        <!-- PRODUCT -->
         <div class="new-launches">
             <a href="product.html" class="shopping">
                 <img src="./images/cross-necklace.png" alt="cross-necklace">
                 <p class="title">Cross Necklace</p>
                 <p class="price">99 €</p>
-                <span class="shop"
-                data-title="Cross Necklace"
-                data-price="99"
-                data-image="./images/cross-necklace.png">
-                Shop Now</span>
+
+                 <button class="shop"
+                     data-title="Cross Necklace"
+                     data-price="99"
+                     data-image="./images/cross-necklace.png">
+                     Shop Now
+                </button>
             </a>
             
             <a href="product.html" class ="shopping">
@@ -73,11 +79,12 @@
                  <p class="title">Mid Hoop Silver</p>
                  <p class="price">79 €</p>
                  
-                 <span class="shop"
-                 data-title="Mid Hoop Silver"
-                 data-price="79"
-                 data-image="./images/mid-hoop-silver.png">
-                 Shop Now</span>
+                 <button class="shop"
+                     data-title="Mid Hoop Silver"
+                     data-price="79"
+                     data-image="./images/mid-hoop-silver.png">
+                     Shop Now
+                 </button>
             </a>
 
             <a href="product.html" class ="shopping">
@@ -85,11 +92,12 @@
                  <p class="title">Several Bracelets</p>
                  <p class="price">59 €</p>
 
-                 <span class="shop"
-                 data-title="Several bracelets"
-                 data-price="59"
-                 data-image="./images/several-bracelets.png">
-                 Shop Now</span>
+                 <button class="shop"
+                     data-title="Several bracelets"
+                     data-price="59"
+                     data-image="./images/several-bracelets.png">
+                     Shop Now
+                 </button>
             </a>
 
             <a href="product.html" class ="shopping">
@@ -97,11 +105,12 @@
                  <p class="title">Heart Necklace</p>
                  <p class="price">89 €</p>
 
-                 <span class="shop"
-                 data-title="Heart Necklace"
-                 data-price="89"
-                 data-image="./images/heart-necklace.png">
-                 Shop Now</span>
+                 <button class="shop"
+                     data-title="Heart Necklace"
+                     data-price="89"
+                     data-image="./images/heart-necklace.png">
+                     Shop Now
+                 </button>
             </a>
 
             <a href="product.html" class ="shopping">
@@ -109,11 +118,12 @@
                  <p class="title">Promise Ring</p>
                  <p class="price">49 €</p>
 
-                <span class="shop"
-                 data-title="Promise Ring"
-                 data-price="49"
-                 data-image="./images/promise-ring.png">
-                 Shop Now</span>
+                <button class="shop"
+                     data-title="Promise Ring"
+                     data-price="49"
+                     data-image="./images/promise-ring.png">
+                     Shop Now
+                </button>
             </a>
         </div>
     
@@ -125,6 +135,7 @@
             <p>Contact</p>
             <p>Help</p>
         </div>
+        
         <p>&copy; 2026 Linnéa</p>
  </footer>
 
